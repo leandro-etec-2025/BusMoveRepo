@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusMoveApp">
         <activity
+            android:name=".JLogicaMapa"
+            android:exported="false" />
+        <activity
+            android:name=".ILogicaInformacoes"
+            android:exported="false" />
+        <activity
             android:name=".FLogicaCidades"
             android:exported="false" />
         <activity

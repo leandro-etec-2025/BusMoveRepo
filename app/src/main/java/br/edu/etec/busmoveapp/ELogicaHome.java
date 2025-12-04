@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ELogicaHome extends AppCompatActivity {
 
-    ImageButton botao_horarios, botao_home;
+    ImageButton botao_horarios, botao_atualizacoes, botao_pontos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +27,22 @@ public class ELogicaHome extends AppCompatActivity {
         });
 
         botao_horarios = findViewById(R.id.btn_horarios);
+        botao_atualizacoes = findViewById(R.id.btn_atualizacoes);
+        botao_pontos = findViewById(R.id.btn_pontos);
 
         botao_horarios.setOnClickListener(v -> {
             Intent intent = new Intent(ELogicaHome.this, FLogicaCidades.class);
             startActivity(intent);
         });
 
+        botao_atualizacoes.setOnClickListener(v -> {
+            Intent intent = new Intent(ELogicaHome.this, ILogicaInformacoes.class);
+            startActivity(intent);
+        });
 
-
-
-
+        botao_pontos.setOnClickListener(v -> {
+            Intent intent = new Intent(ELogicaHome.this, JLogicaMapa.class);
+            startActivity(intent);
+        });
     }
 }
