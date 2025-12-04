@@ -2,6 +2,7 @@ package br.edu.etec.busmoveapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ELogicaHome extends AppCompatActivity {
 
-    ImageButton btn_home;
+    ImageButton botao_mapa, botao_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +27,20 @@ public class ELogicaHome extends AppCompatActivity {
             return insets;
         });
 
-        btn_home = findViewById(R.id.btn_home);
+        botao_mapa = findViewById(R.id.btn_mapa);
 
-        btn_home.setOnClickListener(v -> {
+        botao_mapa.setOnClickListener(v -> {
             Intent intent = new Intent(ELogicaHome.this, FLogicaCidades.class);
             startActivity(intent);
         });
+
+        botao_home = findViewById(R.id.btn_home);
+
+        botao_home.setOnClickListener(view -> botao_mapa.setOnClickListener(v -> {
+
+        }));
+
+
+
     }
 }

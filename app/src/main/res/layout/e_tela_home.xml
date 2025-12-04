@@ -8,6 +8,48 @@
     tools:context=".ELogicaHome">
 
     <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="650dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txv_descricao"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:padding="15dp"
+            android:text="Bem-vindo ao aplicativo oficial de informações do transporte intermunicipal da região de Assis. Aqui você encontra todos os horários, rotas, avisos e detalhes atualizados para facilitar seu deslocamento entre as cidades. Tenha uma ótima viagem!"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="276dp"
+            android:layout_height="202dp"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/txv_descricao2"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:padding="15dp"
+            android:text="Abaixo você encontrará as opções de HORÁRIOS, PONTOS de ônibus Disponíveis, Volta ao MENU Principal e Opção de CONFIGURAÇÕES"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/menu_inferior"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -15,16 +57,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent">
-
-        <ImageButton
-            android:id="@+id/btn_home"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="Home"
-            android:scaleType="fitCenter"
-            android:src="@drawable/imagem_home"/>
 
         <ImageButton
             android:id="@+id/btn_mapa"
@@ -45,6 +77,16 @@
             android:contentDescription="Perfil"
             android:scaleType="fitCenter"
             android:src="@drawable/imagem_perfil"/>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imagem_home" />
 
         <ImageButton
             android:id="@+id/btn_menu"

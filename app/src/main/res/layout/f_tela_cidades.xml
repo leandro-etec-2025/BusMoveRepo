@@ -96,16 +96,6 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageButton
-            android:id="@+id/btn_home"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="Home"
-            android:scaleType="fitCenter"
-            android:src="@drawable/imagem_home"/>
-
-        <ImageButton
             android:id="@+id/btn_mapa"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -124,6 +114,16 @@
             android:contentDescription="Perfil"
             android:scaleType="fitCenter"
             android:src="@drawable/imagem_perfil"/>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imagem_home" />
 
         <ImageButton
             android:id="@+id/btn_menu"
