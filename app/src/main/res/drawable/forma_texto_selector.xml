@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Quando em foco -->
+    <item android:drawable="@drawable/forma_texto_focado" android:state_focused="true"/>
+    <!-- Padrão -->
+    <item android:drawable="@drawable/forma_texto_normal"/>
+</selector>

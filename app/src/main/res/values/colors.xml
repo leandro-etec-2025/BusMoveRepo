@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cor_preta">#FF000000</color>
+    <color name="cor_branca">#FFFFFFFF</color>
+    <color name="cor_amarela">#FFC720</color>
+    <color name="cor_azul_1">#0052D6</color>
+    <color name="cor_azul_2">#05235F</color>
+    <color name="cor_azul_3">#67063EB0</color>
+    <color name="cor_cinza_1">#D9D9D9</color>
+    <color name="cor_cinza_2">#EBE8E8</color>
+    <color name="cor_cobalto">#80ABCBFF</color>
+    <color name="cor_cinza_4">#66C9C9C9</color>
+</resources>
