@@ -15,7 +15,9 @@ import androidx.core.view.WindowInsetsCompat;
 public class BLogicaLogin extends AppCompatActivity {
 
     EditText cpf, senha;
-    Button botao;
+    Button botao_entrar;
+    Button botao_esquci_senha;
+    Button botao_nova_conta;   // <────── novo botão
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +33,21 @@ public class BLogicaLogin extends AppCompatActivity {
 
         cpf = findViewById(R.id.etx_cpf);
         senha = findViewById(R.id.etx_senha);
-        botao= findViewById(R.id.btn_entrar);
+        botao_entrar = findViewById(R.id.btn_entrar);
+        botao_esquci_senha = findViewById(R.id.btn_esqueci);
+        botao_nova_conta = findViewById(R.id.btn_nova_conta);
 
-        botao.setOnClickListener(v -> validarLogin());
+        botao_entrar.setOnClickListener(v -> validarLogin());
+
+        botao_esquci_senha.setOnClickListener(v -> {
+            Intent intent = new Intent(BLogicaLogin.this, CLogicaRedefinirSenha.class);
+            startActivity(intent);
+        });
+
+        botao_nova_conta.setOnClickListener(v -> {
+            Intent intent = new Intent(BLogicaLogin.this, DLogicaCadastro.class);
+            startActivity(intent);
+        });
     }
 
     private void validarLogin() {
@@ -51,6 +65,12 @@ public class BLogicaLogin extends AppCompatActivity {
         }
 
         Toast.makeText(this, "Login válido!", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(BLogicaLogin.this, ELogicaHome.class);
+        startActivity(intent);
+
+
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
     }
 
 }

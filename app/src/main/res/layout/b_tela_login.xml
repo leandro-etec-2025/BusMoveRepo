@@ -87,6 +87,25 @@
             android:layout_height="18dp" />
 
         <Button
+            android:id="@+id/btn_entrar"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/forma_botao_estilo"
+            android:padding="12dp"
+            android:text="Entrar"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" /><![CDATA[
+
+        />
+
+        ]]>
+
+        <Button
             android:id="@+id/btn_esqueci"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,27 +118,11 @@
             android:layout_height="10dp" />
 
         <Button
-            android:id="@+id/btn_entrar"
-            android:layout_width="159dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/forma_botao_estilo"
-            android:padding="12dp"
-            android:text="Entrar"
-            android:textColor="@android:color/white"
-            tools:ignore="HardcodedText" />
-        />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
-        <Button
             android:id="@+id/btn_nova_conta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/forma_fundo_transparente"
-            android:text="Esqueceu a senha?"
+            android:text="Não Possuo Cadastro"
             tools:ignore="HardcodedText"/>
 
     </LinearLayout>
