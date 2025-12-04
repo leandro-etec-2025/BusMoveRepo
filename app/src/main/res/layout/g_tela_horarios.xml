@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor_branca"
+    tools:context=".GLogicaHorarios">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="  Horários"
+            android:textColor="@color/cor_azul_2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="06:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_65"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="06:30"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="07:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_75"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="07:30"
+                android:textColor="@color/cor_branca" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="08:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_85"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="08:30"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="09:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_95"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="09:30"
+                android:textColor="@color/cor_branca" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_10"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="10:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_105"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="10:30"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_11"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="11:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_115"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="11:30"
+                android:textColor="@color/cor_branca" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_12"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="12:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_125"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="12:30"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_13"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="13:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_135"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="13:30"
+                android:textColor="@color/cor_branca" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_14"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="14:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_145"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="14:30"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_15"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="15:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_155"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="15:30"
+                android:textColor="@color/cor_branca" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_16"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="16:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_165"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="16:30"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_17"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="17:00"
+                android:textColor="@color/cor_branca" />
+
+            <Button
+                android:id="@+id/btn_175"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_botao_horario"
+                android:text="17:30"
+                android:textColor="@color/cor_branca" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_inferior"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#0A2463"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imagem_home"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_mapa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imagem_mapa_2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imagem_perfil"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imagem_menu"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

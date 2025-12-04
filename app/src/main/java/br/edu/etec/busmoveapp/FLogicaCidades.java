@@ -2,7 +2,7 @@ package br.edu.etec.busmoveapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageButton;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,15 +10,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ELogicaHome extends AppCompatActivity {
+public class FLogicaCidades extends AppCompatActivity {
 
-    ImageButton btn_home;
+    Button btnRota1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.e_tela_home);
+        setContentView(R.layout.f_tela_cidades);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -26,11 +26,14 @@ public class ELogicaHome extends AppCompatActivity {
             return insets;
         });
 
-        btn_home = findViewById(R.id.btn_home);
+        btnRota1 = findViewById(R.id.btn_rota_1);
 
-        btn_home.setOnClickListener(v -> {
-            Intent intent = new Intent(ELogicaHome.this, FLogicaCidades.class);
+
+        btnRota1.setOnClickListener(v -> {
+            Intent intent = new Intent(FLogicaCidades.this, GLogicaHorarios.class);
             startActivity(intent);
+
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         });
     }
 }
