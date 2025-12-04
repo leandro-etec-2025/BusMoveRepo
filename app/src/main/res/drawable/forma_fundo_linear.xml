@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <!-- Cor de fundo -->
-    <solid android:color="@color/cobalto"/>
+    <solid android:color="@color/cor_cobalto"/>
 
     <!-- Bordas arredondadas -->
     <corners android:radius="20dp"/>

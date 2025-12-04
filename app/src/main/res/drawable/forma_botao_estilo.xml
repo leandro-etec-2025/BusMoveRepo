@@ -3,18 +3,18 @@
     <!-- Estado pressionado -->
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="@color/blue2"/>
+            <solid android:color="@color/cor_azul_2"/>
             <corners android:radius="25dp"/>
-            <stroke android:width="2dp" android:color="@color/blue2"/>
+            <stroke android:width="2dp" android:color="@color/cor_azul_2"/>
         </shape>
     </item>
 
     <!-- Estado normal -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/blue2"/>
+            <solid android:color="@color/cor_azul_2"/>
             <corners android:radius="10dp"/>
-            <stroke android:width="2dp" android:color="@color/blue2"/>
+            <stroke android:width="2dp" android:color="@color/cor_azul_2"/>
         </shape>
     </item>
 </selector>
