@@ -311,6 +311,17 @@
                 android:textColor="@color/cor_branca" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_botao_estilo"
+            android:padding="12dp"
+            android:text="HOME"
+            android:textColor="@android:color/white" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -323,7 +334,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageButton
-            android:id="@+id/btn_mapa"
+            android:id="@+id/btn_horarios"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -333,7 +344,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/btn_perfil"
+            android:id="@+id/btn_pontos"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -343,7 +354,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/btn_home"
+            android:id="@+id/btn_atualizacoes"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -353,7 +364,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/btn_menu"
+            android:id="@+id/btn_perfil"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

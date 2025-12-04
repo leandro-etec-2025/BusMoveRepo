@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class FLogicaCidades extends AppCompatActivity {
 
-    Button botao_home;
+    Button botao_voltar, botao_rota_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,25 @@ public class FLogicaCidades extends AppCompatActivity {
             return insets;
         });
 
+        botao_voltar = findViewById(R.id.btn_voltar);
 
+        botao_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FLogicaCidades.this, ELogicaHome.class);
+                startActivity(intent);
+            }
+        });
+
+        botao_rota_1 = findViewById(R.id.btn_rota_1);
+
+        botao_rota_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FLogicaCidades.this, GLogicaHorarios.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

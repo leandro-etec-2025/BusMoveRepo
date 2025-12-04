@@ -30,6 +30,26 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/menu_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/forma_botao_estilo"
+            android:padding="12dp"
+            android:text="HOME"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/menu_inferior"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -39,7 +59,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageButton
-            android:id="@+id/btn_home"
+            android:id="@+id/btn_atualizacoes"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -49,7 +69,7 @@
             android:src="@drawable/imagem_home"/>
 
         <ImageButton
-            android:id="@+id/btn_mapa"
+            android:id="@+id/btn_horarios"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -59,7 +79,7 @@
             android:src="@drawable/imagem_mapa_2"/>
 
         <ImageButton
-            android:id="@+id/btn_perfil"
+            android:id="@+id/btn_pontos"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -69,7 +89,7 @@
             android:src="@drawable/imagem_perfil"/>
 
         <ImageButton
-            android:id="@+id/btn_menu"
+            android:id="@+id/btn_perfil"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
