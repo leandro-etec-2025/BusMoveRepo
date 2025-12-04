@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Random;
+
 public class HLogicaDescricaoHorarios extends AppCompatActivity {
 
     TextView txvDescricao;
@@ -28,7 +30,6 @@ public class HLogicaDescricaoHorarios extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
 
         botao_voltar = findViewById(R.id.btn_voltar);
 
@@ -51,11 +52,46 @@ public class HLogicaDescricaoHorarios extends AppCompatActivity {
 
     private String gerarDescricao(String horario) {
 
+        String motorista;
+
+        switch (horario) {
+            case "06:00": motorista = "José Carlos"; break;
+            case "06:30": motorista = "Marcos Pereira"; break;
+            case "07:00": motorista = "Ricardo Silva"; break;
+            case "07:30": motorista = "Cláudio Santos"; break;
+            case "08:00": motorista = "Paulo Mendes"; break;
+            case "08:30": motorista = "Roberto Lima"; break;
+            case "09:00": motorista = "André Souza"; break;
+            case "09:30": motorista = "Rogério Amaral"; break;
+            case "10:00": motorista = "Fábio Henrique"; break;
+            case "10:30": motorista = "Luciano Ribeiro"; break;
+            case "11:00": motorista = "Daniel Moreira"; break;
+            case "11:30": motorista = "Tiago Ferreira"; break;
+            case "12:00": motorista = "Gustavo Dias"; break;
+            case "12:30": motorista = "Leandro Silva"; break;
+            case "13:00": motorista = "Alexandre Gomes"; break;
+            case "13:30": motorista = "Marcelo Teixeira"; break;
+            case "14:00": motorista = "Rafael Antunes"; break;
+            case "14:30": motorista = "Sérgio Farias"; break;
+            case "15:00": motorista = "Eduardo Campos"; break;
+            case "15:30": motorista = "Wellington Moraes"; break;
+            case "16:00": motorista = "Carlos Eduardo"; break;
+            case "16:30": motorista = "João Batista"; break;
+            case "17:00": motorista = "Márcio Rogério"; break;
+            case "17:30": motorista = "Fernando Alves"; break;
+            default: motorista = "Não cadastrado"; break;
+        }
+
+        Random random = new Random();
+        int numeroOnibus = random.nextInt(50) + 1;  // 1 a 50
+
         if (horario.endsWith(":30")) {
             return "O horário selecionado é " + horario + ".\n\n" +
                     "Nessa linha, os ônibus passam apenas de hora em hora. " +
                     "Por isso, os horários marcados com minutos servem apenas como referência. " +
-                    "Recomendamos chegar com antecedência para evitar imprevistos.";
+                    "Recomendamos chegar com antecedência para evitar imprevistos.\n\n" +
+                    "Ônibus: " + numeroOnibus + "\n" +
+                    "Motorista responsável: " + motorista + ".";
         }
 
         if (horario.startsWith("07") ||
@@ -66,12 +102,16 @@ public class HLogicaDescricaoHorarios extends AppCompatActivity {
             return "Você selecionou o horário " + horario + ".\n\n" +
                     "Esse é um período de maior movimentação, o que pode gerar atrasos. " +
                     "O ônibus pode levar alguns minutos a mais para chegar. " +
-                    "Fique atento e chegue ao ponto com antecedência.";
+                    "Fique atento e chegue ao ponto com antecedência.\n\n" +
+                    "Ônibus: " + numeroOnibus + "\n" +
+                    "Motorista responsável: " + motorista + ".";
         }
 
         return "Horário escolhido: " + horario + ".\n\n" +
                 "Neste período, os ônibus costumam circular normalmente, " +
                 "com pouca chance de atraso. Ainda assim, é recomendável " +
-                "aguardar no ponto alguns minutos antes do horário previsto.";
+                "aguardar no ponto alguns minutos antes do horário previsto.\n\n" +
+                "Ônibus: " + numeroOnibus + "\n" +
+                "Motorista responsável: " + motorista + ".";
     }
 }

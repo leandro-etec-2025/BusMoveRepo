@@ -73,7 +73,7 @@
             android:layout_height="52dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_botao_horario"
-            android:text="Maracaí - Padrinhas Pta"
+            android:text="Maracaí - Pedrinhas Pta"
             android:textColor="@color/cor_branca" />
 
         <Button
@@ -82,7 +82,7 @@
             android:layout_height="52dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_botao_horario"
-            android:text="Padrinhas Pta - Maracaí"
+            android:text="Pedrinhas Pta - Maracaí"
             android:textColor="@color/cor_branca" />
 
         <Button
